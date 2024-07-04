@@ -142,7 +142,7 @@ async def cancel_order(call: types.CallbackQuery, state: FSMContext):
 async def send_photo(message: types.Message, state: FSMContext):
 	await bot.delete_message(message.from_user.id, message.message_id)
 
-	photo = types.InputFile("images/zayavka.jpg")
+	photo = types.InputFile("images/Заявка принята.jpg")
 	await message.answer_photo(photo, caption=templates.sended_photo)
 
 async def buy_upGold(call: types.CallbackQuery, state:FSMContext):
